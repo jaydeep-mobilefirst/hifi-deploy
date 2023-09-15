@@ -1,0 +1,424 @@
+/*********************************************************/
+/*//////////////////////// PAGES ////////////////////////*/
+/*********************************************************/
+
+/*//////////////////////// MAIN PAGE /////////////////////*/
+
+.About h6 {
+    margin-left: -35px;
+    margin-bottom: var(--m7);
+}
+
+/*--------------- Hero Section ---------------*/
+
+.AboutHeroSectionWrap {
+  width: 100%;
+  height: 950px;
+  overflow: hidden;
+	background: linear-gradient(
+  180deg,
+  #5224ad,
+  rgba(121, 63, 255, 0.58),
+  rgba(208, 185, 255, 0.66), 
+  transparent,
+  var(--purple5)), 
+  url(../public/bg/waves-about.jpg);
+
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.AboutHeroSection {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 150px;
+}
+
+.AboutHeroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left !important;
+  height: 700px;
+  text-align: center;
+  margin-top: var(--m9);
+}
+
+.AboutHeroSection h1,
+.AboutHeroSection h2,
+.AboutHeroSection h6,
+.AboutHeroSection p {
+  color: var(--white);
+}
+
+.AboutHeroSection h1 {
+  color: var(--white);
+}
+
+.AboutHeroSection h6 {
+  color: var(--white);
+  margin-bottom: var(--m5);
+}
+
+.About1 img {
+  position: realtive;
+  top: 10;
+  left: 0;
+}
+
+/* .About2 img {
+  position: relative;
+  top: 10;
+  left: 0;
+} */
+
+/*--------------- Mission Section ---------------*/
+
+.AboutSectionWrap {
+  background: var(--purpleGrad5);
+  padding: 0;
+  height: 1500px;
+}
+
+/* .AboutSectionWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  min-height: 1500px;
+  background-image: 
+    url(../public/img/thorus-about1.svg),
+    url(../public/img/thorus-about2.svg), 
+    url(../public/img/thorus-about2.svg);
+  background-position: 
+    500px -380px,
+    -600px 250px,
+    600px 800px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 
+    120%, 
+    100%,
+    90%;
+} */
+
+
+.AboutSectionBg {
+  width: 100%;
+  min-height: 1500px;
+  background-image: 
+    url(../public/img/thorus-about1.svg),
+    url(../public/img/thorus-about2.svg), 
+    url(../public/img/thorus-about2.svg); 
+  background-position: 
+    500px -380px,
+    -600px 250px,
+    600px 800px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 
+    120%, 
+    100%,
+    90%;
+}
+
+.AboutSection {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 150px;
+  color: var(--white);
+}
+
+.AboutSection h2,
+.AboutSection h3,
+.AboutSection h6 {
+  color: var(--white);
+}
+
+.AboutSection h6 {
+  margin-left: -50px;
+}
+
+.AboutSection h4 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.AboutContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutRightWrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin-top: var(--m6);
+}
+
+.AboutLeftWrap {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  margin-top: var(--m9);
+}
+
+.AboutLeft {
+  width: 50%;
+  height: auto;
+  padding-bottom: var(--m10);
+}
+
+.AboutRight {
+  width: 50%;
+  height: auto;
+}
+
+.AboutSub {
+  font-weight: 600;
+}
+
+.grad-line {
+  border: none;
+  height: 4px;
+  width: 2000px;
+  background: var(--warmGrad);
+  margin: 10px 0 40px;
+  position: relative;
+  left: 0px;
+}
+
+
+/*--------------- Values Section ---------------*/
+
+.ValuesSectionWrap {
+  padding:  100px 100px 0 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: url(../public/img/values-waves.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%; */
+}
+
+.ValuesSection {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ValuesContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ValuesContent p {
+  width: 90%;
+}
+
+.ValuesCardsWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.ValuesCards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px 0 0 0;
+}
+
+.ValuesCards.Blue {
+  display: flex;
+  gap: 30px;
+  margin: 300px 0 170px 30px;  
+}
+
+/* .ValuesCardWrap:nth-child(2), 
+.ValuesCardWrap:nth-child(4) {
+    margin-top: 800px;
+} */
+
+.ValuesCardWrap {
+  display: flex;
+  max-width: 460px;
+  border-radius: 25px;
+}
+
+.ValuesCardInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  padding: var(--m8);
+}
+
+.ValuesCardTxt {
+  position: relative;
+  padding-left: var(--m6);
+  margin-left: var(--m1);
+}
+
+.ValuesCardTxt::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px; 
+  background: var(--warmGradV)
+}
+
+.ValuesCardTxt.Blue::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px; 
+  background: var(--blueGradV)
+}
+
+.ValuesCards img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: var(--m3);
+}
+
+.ValuesCards h5 {
+  padding-bottom: var(--m4);
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.ValuesCards h6 {
+  padding-bottom: var(--m4);
+  margin: 0;
+}
+
+.ValuesCards p {
+  font-size: 1.4rem;;
+}
+
+
+
+/*--------------- Team Section ---------------*/
+
+.TeamSectionWrap {
+  background: var(--sBlueGrad2);
+  padding: 100px 130px;
+  position: relative;
+  border-top: 1px solid var(--grey2);
+}
+
+.TeamSectionWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  background-image: url(../public/img/world-grid.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center right;
+
+  -webkit-mask-image: linear-gradient(to right, transparent, white 50%);
+  mask-image: linear-gradient(to right, transparent, white 50%);
+}
+
+.TeamSection {
+  max-width: 1200px;
+  margin: auto;
+  z-index: 10;
+}
+
+.TeamContent {
+  display: flex;
+}
+
+.TeamSection .SideTxt {
+  width: 500px;
+  margin-right: 15%;
+  z-index: 1;
+}
+
+.TeamSection .SideImg {
+  width: 40%;
+  left: 80px;
+  z-index: 1;
+}
+
+.TeamSection .SideImg img{
+  width: 100%;
+  height: auto;
+}
+
+/*--------------- Team Exp Section ---------------*/
+
+.About .Partners {
+  background: var(--white);
+}
+
+.PartnerLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.PartnerLogos img {
+  width: auto;
+  height: 20px;
+  padding: 5%;
+} 
+
+ /*--------------- Build Section ---------------*/
+
+ .BuildSectionWrap {
+  /* background: var(--sBlueGradV); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 500px;
+  position: relative;
+ }
+
+ .BuildSectionWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  background-image: url(../public/logos/hifilogo-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center 50px;
+
+  -webkit-mask-image: linear-gradient(to top, transparent 40%, white 70%);
+  mask-image: linear-gradient(to top, transparent 40%, white 70%);
+}
+
+ .BuildSection {
+  width: 90%;
+  z-index: 1;
+  max-width: 1000px;
+ }
+ 
+ .BuildContent {
+   text-align: center;
+ }

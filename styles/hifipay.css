@@ -1,0 +1,596 @@
+/*********************************************************/
+/*//////////////////////// PAGES ////////////////////////*/
+/*********************************************************/
+
+/*//////////////////////// MAIN PAGE /////////////////////*/
+
+/*--------------- Hero Section ---------------*/
+
+.HpayHeroSectionWrap {
+  width: 100%;
+  height: 800px;
+  justify-content: center;
+  overflow: hidden;
+	background: linear-gradient(180deg, 
+  var(--dpurple) 5%,
+  rgba(64, 15, 156, 0.378),
+  transparent 50%), 
+  url(../public/bg/waves-hpay.jpg);
+  
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-position: center center;
+  background-size: cover;
+  margin-top: -80px;
+}
+
+.HpayHeroSection {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.HpayHeroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left !important;
+  height: 650px;
+  text-align: center;
+  margin-top: var(--m9);
+}
+
+.HpayHeroSection .AppBtn {
+  margin-top: 40px;
+}
+
+.HpayHeroSection h2 {
+  color: var(--white);
+  font-weight: 600 ;
+}
+
+.HpayHeroSection h6 {
+  color: var(--white);
+  width: 60%;
+  font-weight: 400;
+}
+
+/*--------------- Power Section ---------------*/
+
+.PowerSectionWrap {
+  background: linear-gradient(171deg, white 70%, var(--purple3) 30%);
+  position: relative;
+  z-index: 2;
+}
+
+.PowerSection {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.PowerContent {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.PowerSection .SideTxt {
+  width: 500px;
+  width: 50%;
+  margin-right: 10%;
+}
+
+.PowerSection .SideImg {
+  width: 50%;
+}
+
+.PowerSection .SideImg img{
+  position: relative;
+  top: 50px;
+  left: 100px;
+  width: 900px;
+  height: auto;
+}
+
+
+/*--------------- Blockchain Section ---------------*/
+
+.BlockSectionWrap {
+  background: var(--whiteGradTop);
+  padding: 80px 50px 50px 50px;
+  border-top: 1px solid var(--grey2);
+  position: relative;
+  z-index: 0;
+}
+
+.BlockSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  
+  background-image: 
+    url(../public/bg/green-circle.svg),
+    url(../public/bg/blue-circle.svg);
+  background-position: 
+  800px 00px, 
+  800px bottom; 
+  background-repeat: no-repeat, no-repeat;
+  background-size: 
+    50%,
+    50%; 
+  
+  filter: blur(500px); 
+}
+
+.BlockSection {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.BlockContent {
+  display: flex;
+}
+
+.BlockSection .SideTxt {
+  width: 500px;
+  margin-right: 15%;
+}
+
+.BlockSection .SideImg {
+  width: 40%;
+  left: 80px;
+}
+
+.BlockSection .SideImg img{
+  width: 800px;
+  height: auto;
+}
+
+/*--------------- Pay Section ---------------*/
+
+.PaySectionWrap {
+  padding: 80px 50px 50px 50px;
+  border-top: 1px solid var(--grey2);
+  background: var(--whiteGradTop);
+  position: relative;
+  z-index: 2 !important;
+}
+
+.PaySection {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.PayContent {
+  display: flex;
+}
+
+.PaySection .SideTxt {
+  width: 500px;
+  margin-left: 15%;
+}
+
+.PaySection .SideImg {
+  width: 40%;
+  left: 80px;
+}
+
+.PaySection .SideImg img{
+  width: 800px;
+  height: auto;
+}
+
+/*--------------- Suite Section ---------------*/
+
+.SuiteSectionWrap {
+  background: var(--white);
+  position: relative;
+  z-index: 2;
+}
+
+.SuiteSection::before {
+  content: "";
+  position: absolute;
+  top: -200;
+  right: 0;
+  bottom: -200;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  
+  background-image: 
+    url(../public/bg/green-circle.svg),
+    url(../public/bg/blue-circle.svg);
+  background-position: 
+  calc(100% + 100px) top, 
+  calc(0% + 100px) bottom; 
+  background-repeat: no-repeat, no-repeat;
+  background-size: 
+    80%, 
+    80%; 
+  
+  filter: blur(500px); 
+}
+
+.SuiteSection {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.SuiteContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.TextGroup {
+  display: flex;
+  flex-direction: row;
+  gap: var(--m9);
+  margin-top: var(--m3)
+}
+
+.TextGroup p {
+  width: 80%;
+}
+
+.SuiteContent img {
+  width: 110%;
+  height: auto;
+}
+
+/*--------------- Features Section ---------------*/
+
+.FeaturesSectionWrap {
+  border-top: 1px solid var(--grey2);
+  background: var(--white);
+  position: relative;
+  z-index: 3;
+}
+
+.FeaturesSection {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.FeaturesContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FeaturesCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 60px;
+}
+
+.FeaturesCardWrap {
+  display: flex;
+  min-height: 250px;
+  max-width: 350px;
+  border-radius: 25px;
+
+  /* border: 1px solid;
+  border-radius: var(--r2);
+  border-color: var(--base); */
+  /* box-shadow: var(--sh-l); */
+}
+
+.FeaturesCardInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.FeaturesCards img {
+  width: auto;
+  height: 40px;
+  padding-bottom: var(--m4);
+}
+
+.FeaturesCards h6 {
+  padding-bottom: var(--m4);
+    font-weight: 600;
+    font-size: 1.6rem;
+  
+}
+
+.FeaturesCards p {
+  font-size: 1.4rem;;
+}
+
+/*--------------- Explore Section ---------------*/
+
+.ExploreSectionWrap {
+  background: var(--pBlueGrad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 100px 130px;
+  position: relative;
+}
+
+.ExploreSectionWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  background-image: url(../public/img/explore.svg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center left;
+
+  -webkit-mask-image: linear-gradient(to left, transparent 45%, white 65%);
+  mask-image: linear-gradient(to left, transparent 45%, white 65%);
+}
+
+.ExploreSection {
+  max-width: 1200px;
+  z-index: 2;
+}
+
+.ExploreContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ExploreSection p,
+.ExploreSection h4 {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.ExploreSection .SideTxt {
+  width: 40%;
+  margin-left: 15%;
+}
+.ExploreSection .SideImg {
+  width: 50%;
+}
+
+.ExploreSection .SideImg img {
+  width: 100%;
+  height: auto;
+}
+
+ /*--------------- Complicance Section ---------------*/
+
+ .CompSectionWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--grey2);
+  height: 500px;
+  position: relative;
+ }
+
+ .CompSectionWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  background: url(../public/img/america.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 65% center;
+
+  -webkit-mask-image: linear-gradient(to right, transparent, white, transparent, white);
+  mask-image: linear-gradient(to right, transparent, white, transparent, white);
+}
+ 
+ .CompSection {
+   max-width: 1200px;
+   z-index: 1;
+ }
+ 
+ .CompContent {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .CompSection .SideTxt {
+   width: 40%;
+ }
+
+ .CompSection .CompList {
+  margin-right: 0;
+}
+
+.CompSection .CompList .RowList {
+  margin-bottom: 3px;
+}
+
+ .CompSection svg {
+  margin-right: var(--m4);
+ }
+
+
+ /*--------------- Developer Section ---------------*/
+
+.DevSectionWrap {
+  background: var(--whiteGradTop);
+  display: flex;
+  align-items: center;
+  height: 500px;
+  border-top: 1px solid var(--grey2);
+  padding-left: 0;
+ }
+ 
+ .DevSection {
+   max-width: 100%;
+ }
+ 
+ .DevContent {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .DevSection .SideTxt {
+   width: 50%;
+   margin-left: 10%;
+ }
+
+/*--------------- Dev Slideshow Section ---------------*/
+
+.DevSlide {
+  /* border: 1px solid rgb(255, 0, 43); */
+  width: 1000px;
+  height: 100% !important;
+}
+
+
+/*--------------- Wallet Section ---------------*/
+
+.WalletSectionWrap {
+  background: var(--purpleGrad4);
+  margin: 0;
+  padding: 0;
+  height: 700px;
+ }
+ 
+ .WalletSection {
+  width: 100%;
+  height: 700px;
+   background: linear-gradient(180deg, 
+   rgba(69, 13, 173, 0.476),
+   rgba(54, 5, 145, 0.196),
+   transparent, 
+   transparent), 
+   url(../public/img/million-wallets.svg);
+
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .WalletContent {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding:  120px 100px 100px 80px;
+   width: 30%;
+ }
+ 
+ .WalletSection button,
+ .WalletSection p,
+ .WalletSection h4 {
+   color: var(--white);
+ }
+
+ .WalletSection h4 {
+ font-weight: 400;
+ }
+ 
+ .WalletSection button,
+ .WalletSection p {
+  font-weight: 300;
+ }
+ 
+/*--------------- Support Section ---------------*/
+
+.SupportSectionWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--whiteGrad);
+}
+
+.SupportSection {
+  width: 1200px;
+}
+
+ .SupportSection h6 {
+  font-size: 1.6rem !important;
+  font-weight: 600;
+  padding-bottom: var(--m5);
+ }
+
+.SupportSection .CardGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: var(--m5);
+  margin-top: var(--m11);
+}
+
+.SupportSection .Card {
+  width: 280px;
+}
+
+/*********************************************************/
+/*////////////////// ANIMATION EFFECTS //////////////////*/
+/*********************************************************/
+
+
+/**************************************************************************************/
+/*//////////////////////////////// RESPONSIVE STYLES /////////////////////////////////*/
+/**************************************************************************************/
+
+
+@media (max-width: 1536px) {
+
+
+}
+
+@media (max-width: 1367px) {
+
+
+}
+
+@media (max-width: 1280px) {
+
+  
+}
+
+@media (max-width: 1024px) {
+
+
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 640px) {
+
+
+
+}
+
+@media (max-width: 480px) {
+
+
+
+}
+

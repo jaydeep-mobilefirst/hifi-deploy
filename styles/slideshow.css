@@ -1,0 +1,270 @@
+/*********************************************************/
+/*//////////////////////// SLIDESHOWS ////////////////////////*/
+/*********************************************************/
+
+/*//////////////////////// MAIN SLIDESHOW /////////////////////*/
+
+
+/*--------------- Slideshow Section ---------------*/
+
+.SlideSectionWrap {
+  padding: 0;
+  width: 100%; 
+  height: 600px;
+  box-sizing: border-box;
+  z-index: 2;
+
+  background: 
+
+    url('../public/img/linewave2-trans.svg') center 25% no-repeat,
+    var(--warmGradDg);
+    
+  background-size: 140%, auto;
+}
+
+.SlideSection {
+  margin: auto;
+}
+
+.SlideRowWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .SlideWave {
+  width: 100%;
+  height: 900px;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+	background: linear-gradient(180deg, rgba(89, 22, 214, 0.395),rgba(82, 24, 188, 0.196),rgba(31, 0, 84, 0), rgba(255, 255, 255, 0)), url(../public/img/linewave2.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-position: center -100px;
+  background-size: 150%;
+  margin-top: -90px;
+  z-index: -1;
+  opacity: 0.6;
+} */
+
+.SlideSection h1 {
+  font-size: 12rem;
+  line-height: 12rem;
+}
+
+.SlideSection h4 {
+  color: var(--white);
+}
+
+.SlideSection p {
+  color: var(--white);
+}
+
+
+/*/////// FLICKITY STYLES //////*/
+
+.gallery-cell {
+  margin-right: 0px;
+  counter-increment: gallery-cell;
+  margin-bottom: 0px;
+  background: transparent;
+  width: 100%;
+  height: 580px;
+}
+
+.flickity-button:focus {
+  box-shadow: none !important;
+}
+.flickity-prev-next-button {
+  width: 50px !important;
+  height: 50px !important;
+  opacity: 0;
+}
+.flickity-prev-next-button.previous { left: 20px !important; }
+.flickity-prev-next-button.next { right: 20px !important; }
+
+.flickity-page-dots .dot {
+  width: 15px !important;
+  height: 15px !important;
+  position: relative;
+  top: -70px;
+  background: var(--white) !important;
+}
+
+/*//////////////////////// IMG CAROUSEL /////////////////////*/
+
+
+.img-carousel {
+  position: relative;
+  width: 680px;
+  max-width: 100%;
+  height: 80px;
+  overflow-x: hidden;
+}
+
+.img-carousel img {
+  width: 60px;
+  height: auto;
+  margin: 5px;
+  border-radius: var(--r1);
+}
+
+.img-track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.img-track.wallets {
+  animation: imgcarousel 15s linear infinite;
+}
+
+.img-track.assets {
+  animation: imgcarousel 40s linear infinite;
+}
+
+.img-track.networks {
+  animation: imgcarousel 32s linear infinite;
+}
+
+
+@keyframes imgcarousel {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+/*//////////////////////// DEV SLIDESHOW /////////////////////*/
+
+
+.DevSlideWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.DevSlideWrap h6 {
+  padding-bottom: 20px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.DevSlideInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+}
+
+.DevSlideWrap .CardTop {
+  background: var(--pblue);
+  height: 13px;
+  width: 100%;
+}
+
+/*/////// FLICKITY STYLES //////*/
+
+.dev-carousel .gallery-cell {
+  counter-increment: gallery-cell;
+  margin:  50px 25px;
+  width: 700px;
+  height: 500px;
+
+  background: var(--white);
+  border-radius: var(--r1);
+  border: 1px solid var(--grey2);
+  box-shadow: var(--sh-xl);
+}
+
+.dev-carousel .flickity-button:focus {
+  box-shadow: none !important;
+}
+.dev-carousel .flickity-prev-next-button {
+  width: 50px !important;
+  height: 50px !important;
+}
+.dev-carousel .flickity-prev-next-button.previous { left: 20px !important; }
+.dev-carousel .flickity-prev-next-button.next { right: 20px !important; }
+
+.dev-carousel .flickity-page-dots .dot {
+  width: 15px !important;
+  height: 15px !important;
+  background: var(--blue) !important;
+  margin-bottom: 50px;
+}
+
+
+/*//////////////////////// BLOG SLIDESHOW /////////////////////*/
+
+.BlogSlideWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BlogSlideWrap h6 {
+  padding-bottom: 20px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.BlogSlideWrap .SideTxt {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.BlogSlideWrap .SideImg {
+  margin-left: 10%;
+}
+
+.BlogSlideWrap .SideImg img {
+  width: 300px;
+  height: auto;
+}
+
+.BlogSlideInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*/////// FLICKITY STYLES //////*/
+
+.blog-carousel .gallery-cell {
+  counter-increment: gallery-cell;
+  margin: 50px 25px;
+  width: 95%;
+  height: 550px;
+
+  background: #ffffff15;
+  border-radius: var(--r3);
+  border: 1px solid var(--purple);
+  box-shadow: var(--sh-xl);
+}
+
+.blog-carousel .flickity-button:focus {
+  box-shadow: none !important;
+}
+.blog-carousel .flickity-prev-next-button {
+  width: 50px !important;
+  height: 50px !important;
+}
+.blog-carousel .flickity-prev-next-button.previous { left: 20px !important; }
+.blog-carousel .flickity-prev-next-button.next { right: 20px !important; }
+
+.blog-carousel .flickity-page-dots .dot {
+  width: 15px !important;
+  height: 15px !important;
+  background: var(--white) !important;
+  margin-bottom: 50px;
+}

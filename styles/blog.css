@@ -1,0 +1,251 @@
+/*********************************************************/
+/*//////////////////////// PAGES ////////////////////////*/
+/*********************************************************/
+
+/*//////////////////////// BLOG PAGE /////////////////////*/
+
+/*--------------- Main Blog Section ---------------*/
+
+.BlogSectionWrap {
+  background: var(--purpleGrad5);
+  padding: 0;
+}
+
+.BlogSectionBg {
+  width: 100%;
+  min-height: 1000px;
+  background-image: 
+    url(../public/img/thorus-about1.svg),
+    url(../public/img/thorus-about2.svg); 
+  background-position: 
+    500px -400px,
+    -600px 100px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 
+    120%, 
+    100%; 
+}
+
+.BlogSection {
+  max-width: 100%;
+  margin: auto;
+  color: var(--white);
+  padding: 100px;
+}
+
+.BlogSection h3,
+.BlogSection h5,
+.BlogSection p {
+  color: var(--white);
+}
+
+.BlogSection h5 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+/* Blog Slideshow */
+
+.BlogSlide {
+  padding: 0;
+}
+
+/*--------------- Cards Section ---------------*/
+
+.PostSectionWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--whiteGrad);
+}
+
+.Categories {
+  display: flex;
+}
+
+.Categories a {
+  color: var(--dark1) !important;
+  font-weight: 500;
+  padding: 0 50px 0 0;
+}
+
+.Posts .CardGroup {
+  display: grid;
+  align-items: stretch; 
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px;
+  margin: 50px 0;
+}
+
+.Posts .CardWrap {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  min-width: 350px;
+  align-content: flex-start;
+}
+
+.Posts .CardTop {
+  background: var(--purpleGrad);
+  height: 200px;
+  border-radius: var(--r3) var(--r3) 0 0;
+}
+
+.Posts .Card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 160px;
+  border-radius: 0 0 var(--r3) var(--r3);
+}
+
+.Posts .CardTxt {
+  padding: var(--m7);
+}
+
+.Posts .CardSub {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: var(--m0) !important;
+  color: var(--blue);
+}
+
+.Posts .Card p {
+  font-size: 1.4rem;
+  margin-bottom: var(--m2);
+  line-height: 2.2rem;
+}
+
+.Posts .Card h6 {
+  font-size: 1.8rem;
+}
+
+ /*--------------- Subscribe Section ---------------*/
+
+ .SubSectionWrap {
+  background: var(--warmGradDg);
+  border-top: 1px solid var(--grey2);
+  height: 400px;
+  position: relative;
+ }
+
+ .SubSectionWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+	background-image: url(../public/img/linewave2.svg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center -350px;
+
+  -webkit-mask-image: linear-gradient(to top, transparent, white 50%);
+  mask-image: linear-gradient(to top, transparent, white 50%);
+
+}
+ 
+ .SubSection {
+   max-width: 1200px;
+   z-index: 1;
+ }
+ 
+ .SubContent {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   color: var(--white);
+   width: 40%;
+ }
+
+.SubContent h4,
+.SubContent h5,
+.SubContent h6{
+  color: white !important;
+}
+
+input {
+  border-radius: var(--r0);
+  height: 32px;
+  box-shadow: none;
+  border: 1px solid var(--grey1);
+}
+
+.SubContent input {
+  margin-bottom: var(--m5);
+  height: 32px;
+  width: 70%;
+}
+
+.SubContent p {
+font-size: small;
+padding-bottom: 10px !important;
+}
+
+.SubContent h5 {
+  margin-bottom: var(--m7);
+}
+
+.SubContent h6 {
+  margin-bottom: var(--m4);
+  font-weight: 400 ;
+}
+
+ .SubContent .SideTxt {
+   width: 100%;
+   margin-right: 0;
+   z-index: 1;
+ }
+
+/*--------------- News Carousel Section ---------------*/
+
+.NewsSectionWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px 100px 100px;
+  color: var(--dark1);
+  height: 700px;
+
+  background-image: 
+    url('../public/img/linewave-color.svg'),
+    var(--purpleGrad6);
+
+    background-position: 
+    center 58%,
+    center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 
+    100%, 
+    100%;
+}
+
+.NewsSection h1 {
+  color: white;
+}
+
+.NewsSection h6 {
+  margin: 0;
+}
+
+/* .NewsSection .Posts .CardGroup {
+  display: flex;
+  gap: 45px;
+  margin: 50px 0;
+}
+
+.NewsSection .Posts .Card {
+  display: flex;
+
+  border: none;
+  box-shadow: var(--sh-xl);
+
+  border-radius: var(--r3);
+  border-color: none;
+  background: var(--white);
+} */

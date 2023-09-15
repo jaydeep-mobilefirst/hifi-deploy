@@ -1,0 +1,985 @@
+.root {
+
+  /* Text Sizes */
+
+  --text-xs: 1.2rem; /* 12px */
+  --line-xs: 1.6rem; /* 16px */
+
+  --text-s: 1.4rem; /* 14px */
+  --line-s: 2rem; /* 20px */
+
+  --text-b:	1.6rem; /* 16px */
+  --line-b: 2.4rem; /* 24px */
+
+  --text-l:	1.8rem; /* 18px */
+  --line-l: 2.8rem; /* 28px */
+
+  --text-1: 2rem; /* 20px */
+  --line-1: 2.8rem; /* 28px */
+
+  --text-2: 2.4rem; /* 24px */
+  --line-2: 3.2rem; /* 32px */
+
+  --text-3:  3rem; /* 30px */
+  --line-3: 3.6rem; /* 36px */
+
+  --text-4: 3.6rem; /* 36px */
+  --line-4: 4rem; /* 40px */
+
+  --text-5: 4.8rem; /* 48px */
+  --text-6: 6rem; /* 60px */
+  --text-7: 7.2rem; /* 72px */
+  --text-8: 9.6rem; /* 96px */
+  --text-9: 12.8rem; /* 128px */
+
+  /* Border Radius */
+
+  --r0: 8px;
+  --r1: 12px;
+  --r2: 16px;
+  --r3: 30px;
+  --r4: 40px;
+  --r5: 48px;
+  --r6: 60px;
+
+  /* Spacing */
+
+  --m0: 2px;
+  --m1: 4px;
+  --m2: 8px;
+  --m3: 12px;
+  --m4: 16px;
+  --m5: 20px;
+  --m6: 24px;
+  --m7: 32px;
+  --m8: 40px;
+  --m9: 48px;
+  --m10: 64px;
+  --m11: 80px;
+  --m12: 100px;
+  --m13: 120px;
+  --m14: 140px;
+  --m15: 160px;
+  --m16: 180px;
+
+  /* Colors */
+
+  --white: white;
+  --front: var(--dark2);
+  --base: var(--purple3);
+
+  --trans: rgba(0, 0, 0, 0.5);
+
+  --dark: hsl(245, 80%, 15%); 
+  --dark2: hsl(245, 35%, 20%);
+  --dark3: hsl(245, 20%, 25%);
+  --dark4: hsl(242, 25%, 59%);
+
+  --grey: hsl(240, 100%, 99%);
+  --grey1: hsl(240, 100%, 97%);
+  --grey2: hsl(240, 37%, 91%);
+  --grey3: hsl(240, 37%, 85%);
+
+  --pblue: hsl(253, 95%, 60%);
+  --pblue1:hsl(253, 100%, 75%);
+  --pblue2: hsl(253, 100%, 80%);
+
+  --blue: hsl(241, 100%, 68%);
+  --green: hsl(174, 98%, 41%);
+
+  --pink: hsl(281, 72%, 56%);
+  --orange: hsl(14, 100%, 68%);
+  --cream: hsl(1, 100%, 78%);
+
+  --purple: hsl(270, 100%, 65%);
+  --purple2: hsl(270, 70%, 50%);
+  --purple3: hsl(265, 70%, 45%);
+  --purple4: hsl(268, 80%, 40%);
+  --purple5: hsl(265, 76%, 25%);
+
+  --dpurple: hsl(263, 80%, 29%);
+
+  --sBlue: #D0CFFF;
+  --sCyan: #DBF0FF;
+  --sGreen: #EDFFF2;
+  --sOrange: #fff3ed;
+
+  --sBlue2: #aba8ff;
+  --sCyan2: #bee4ff;
+
+  --sGradBG: #edfffb;
+  --pGradBG: #5715c1;
+
+  /* ------------ Gradients -------------*/
+
+  --warmGrad: linear-gradient(
+    to right, 
+    var(--pblue),
+    var(--pink),
+    var(--cream)
+  );
+
+  --warmGradV: linear-gradient(
+  180deg, 
+    var(--pblue),
+    var(--pink),
+    var(--cream)
+  );
+
+  --warmGradDark: linear-gradient(
+    to right, 
+    var(--blue),
+    var(--pink),
+    var(--orange)
+  );
+
+  --warmGradDg: linear-gradient(
+    140deg, 
+    var(--purple5),
+    hsl(267, 70%, 40%),
+    var(--cream)
+  );
+
+  --blueOrgGrad: linear-gradient(
+    to right, 
+    var(--pblue),
+    var(--cream)
+  );
+
+  --blueGrad: linear-gradient(
+    to right, 
+    var(--blue),
+    var(--green)
+  );
+
+  --blueGradSoft: linear-gradient(
+    to right, 
+    #645cff,
+    #51ebc2
+  );
+
+  --blueGradV: linear-gradient(
+    189deg, 
+    var(--blue),
+    var(--green)
+  );
+
+  --orangeGrad: linear-gradient(
+    to right, 
+    var(--sOrange),
+    var(--orange)
+  );
+
+  --purpleGrad: linear-gradient(
+    to right, 
+    var(--pblue),
+    var(--purple)
+  );
+
+  --pBlueGrad: linear-gradient(
+    to right, 
+    #33177f,
+    #551dae
+  );
+
+  /* Horz Purple BG 2 (bright BG) */
+  --purpleGrad2: linear-gradient(
+    to right, 
+    var(--purple4),
+    var(--purple2)
+  );
+
+  /* Right Horz Purple BG 3 (dark BG) */
+  --purpleGrad3R: linear-gradient(
+    to right, 
+    var(--purple4),
+    var(--purple5)
+  );
+
+   /* Left Horz Purple BG 3 (dark BG) */
+   --purpleGrad3L: linear-gradient(
+    to left, 
+    var(--purple4),
+    var(--purple5)
+  );
+
+  /* Vert Getstarted BG */
+  --purpleGrad4: linear-gradient(
+    0deg, 
+    #6500c9,
+    #4b0092,
+    #380e6f,
+    #4b0092,
+    #7d00d1
+  );
+
+  /* Vert Purple BG (About) */
+  --purpleGrad5: linear-gradient(
+    180deg, 
+    var(--purple5),
+    var(--purple3)
+  );
+
+  /* Diagonal Purple BG (blog news) */
+  --purpleGrad6: linear-gradient(
+    145deg, 
+    var(--purple5),
+    var(--purple4)
+  );
+
+  /* Soft cold BG */
+  --sBlueGrad: linear-gradient(
+    to right, 
+    var(--sGreen),
+    var(--sCyan),
+    var(--sBlue)
+  );
+
+    /* Soft blue BG (Team Section) */
+    --sBlueGrad2: linear-gradient(
+      to right, 
+      var(--grey) 20%,
+      var(--sCyan2),
+      var(--sBlue2)
+    );
+
+        /* Soft blue BG (Suite Section) */
+        --sBlueGrad3: linear-gradient(
+          140deg, 
+          var(--sGreen) 20%,
+          var(--sCyan2),
+          var(--sBlue2)
+        );
+    
+  /* Soft cold BG (Build Section) */
+  --sBlueGradV: linear-gradient(
+    180deg, 
+    var(--grey),
+    var(--sGreen),
+    var(--sCyan2),
+    var(--sBlue2)
+  );
+
+  --whiteGrad: linear-gradient(
+    180deg, 
+    var(--white),
+    var(--grey),
+    var(--grey)
+  );
+
+  --whiteGradTop: linear-gradient(
+    180deg, 
+    var(--grey),
+    var(--white),
+    var(--white)
+  );
+
+
+  --overlay:
+  linear-gradient(180deg, 
+  rgba(0, 0, 0, 0.9),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.3), 
+  rgba(0, 0, 0, 0.3));
+
+  /* Shadow */
+
+  --sh-i: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);  /* Inner Shadow */
+  --sh-s: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --sh-m: 4px 4px 6px 0px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --sh-l: 0 10px 10px -5px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --sh-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --sh-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  --dropdown: 0px 15px 20px 0px rgba(0, 0, 0, 0.25);
+
+  --colorShadow: 5px 5px 15px 5px rgba(119, 0, 255, 0.519);
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* -------------------- MAIN STYLES  --------------------*/
+
+
+*, html, body {
+  scroll-behavior: smooth !important;
+}
+html:focus-within {
+  scroll-behavior: smooth !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", Sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: hsl(245, 35%, 20%);
+  background: white;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body p {
+  letter-spacing: 0.02rem;
+}
+
+a, Link {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: var(--white);
+}
+
+main {
+  background: var(--white); 
+  scrollbar-width: auto;
+  scrollbar-color: var(--front) var(--front);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+blockquote, dl, dd,
+h1, h2, h3, h4, h5, h6,
+hr, figure, p, pre {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--dark2);
+}
+
+input {
+  outline: none;
+}
+
+/* -------------------- TEXT  --------------------*/
+
+
+h1 {
+  font-size: 6rem;
+  line-height: 8rem;
+  font-weight: 700;
+  margin-bottom: var(--m6);
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 5rem;
+  font-weight: 700;
+  margin-bottom: var(--m6);
+}
+
+h3 {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 600;
+  margin-bottom: var(--m7);
+}
+
+h4 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 500;
+  margin-bottom: var(--m6);
+}
+
+h5 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+}
+
+.Subtitle {
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  margin-top: var(--m5);
+}
+
+.bold {
+  font-size: 600;
+}
+
+.text-s {
+  font-size: 1.4rem;
+}
+
+.text-xs {
+  font-size: 1.2rem;
+}
+
+.WarmGrad,
+.WarmGrad span {
+  background: var(--warmGrad);
+  border-image-slice: 1;
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: fit-content;
+  z-index: 1;
+}
+
+.WarmGrad2,
+.WarmGrad2 span {
+  background: var(--warmGradDark);
+  border-image-slice: 1;
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: fit-content;
+  z-index: 2;
+}
+
+.BlueGrad,
+.BlueGrad span {
+  background: var(--blueGrad);
+  border-image-slice: 1;
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: fit-content;
+  z-index: 2;
+}
+
+.OrangeGrad,
+.OrangeGrad span {
+  background: var(--orangeGrad);
+  border-image-slice: 1;
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: fit-content;
+  z-index: 2;
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.pblue {
+  color: var(--pblue);
+}
+
+/* -------------------- BUTTONS  --------------------*/
+
+button {
+  font-size: 1.6rem;
+  color: white;
+  background: var(--white);
+  border-radius: var(--r3);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.AppBtn button {
+  font-weight: 300;
+  background: var(--purpleGrad);
+  box-shadow: var(--sh-l);
+  padding: var(--m4) var(--m6);
+  min-width: 180px;
+  transition: all .2s;
+  border-radius: var(--r3);
+}
+  .AppBtn button:hover {
+    background: var(--warmGrad);
+    /* margin-top: 3px;
+    margin-left: 3px; */
+    filter: brightness(110%);
+
+  }
+
+  .AppBtn button:active {
+    background: var(--warmGrad);
+    box-shadow: none;
+    /* margin-top: 0px;
+    margin-left: 0px; */
+  }
+
+.AppBtn.Grad button {
+  background: var(--warmGrad);
+}
+  .AppBtn.Grad button:hover {
+    background: var(--warmGrad);
+  }
+  .AppBtn.Grad button:active {
+    background: var(--warmGrad);
+  }
+
+  .AppBtn.Blue button {
+    background: var(--blueGrad);
+  }
+    .AppBtn.Blue button:hover {
+      background: var(--blueGrad);
+      filter: brightness(110%);
+
+    }
+    .AppBtn.Blue button:active {
+      background: var(--blueGrad);
+    }
+
+.LineBtn button {
+  color: black;
+  font-weight: 400;
+  border-radius: var(--r3);
+  background: white;
+  /* position: relative;
+  z-index: 1; */
+  border: none;
+  padding: 14px var(--m6);
+  min-width: 180px;
+  transition: background ease-in-out .3s;
+}
+
+.LineBtn .ButtonWrap {
+  display: inline-block;
+  padding: 1.5px 1.1px 1.5px 1.5px; 
+  background: var(--warmGrad);
+  border-radius: var(--r3);
+  position: relative;
+}
+  .LineBtn .ButtonWrap button:hover {
+    color: var(--white);
+    background: var(--warmGrad);
+    background: none;
+  }
+
+.LineBtn .ButtonWrap.blue {
+  background: var(--blueGrad);
+}
+  .LineBtn .ButtonWrap.blue button:hover {
+    color: var(--white);
+    background: var(--blueGrad);
+  }
+
+.LineBtn .ButtonWrap.dark {
+  background: var(--warmGradDark);
+  color: var(--white);
+}
+  .LineBtn .ButtonWrap.dark button:hover {
+    background: rgb(83, 22, 180);
+  }
+
+.LineBtn .grey {
+  background: var(--grey);
+}
+.LineBtn .sBlue {
+  background: var(--sGradBG);
+}
+.LineBtn .purple {
+  background: var(--dpurple);
+}
+
+/* -------------------- TAGS  --------------------*/
+
+.Tag {
+  background: var(--purpleGrad);
+  font-size: var(--text-xs);
+  padding: var(--m1) var(--m5);
+  margin-bottom: 20px;
+  margin-left: -40px;
+  border-radius: var(--r3);
+  color: var(--white);
+}
+
+.TagWrap {
+  margin-top: var(--m2);
+}
+
+.LineTag div {
+  color: var(--dark2);
+  font-weight: 400;
+  font-size: 1.4rem;
+  border-radius: var(--r0);
+  position: relative;
+  z-index: 1;
+  border: none;
+  background: white;
+  padding: var(--m1) var(--m5);
+  /* box-shadow: var(--sh-m); */
+}
+
+.LineTag {
+  display: inline-block;
+  padding: 1px;
+  background: var(--blueGradSoft);
+  border-radius: 9.5px;
+  position: relative;
+  margin-bottom: var(--m2);
+}
+
+.long {
+  padding: var(--m1) var(--m8);
+}
+
+.blue {
+  background: var(--blueGrad);
+}
+
+/* -------------------- COMMON ELEMENTS --------------------*/
+
+.UnderlineWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.Underline {
+  width: 30%;
+  border-bottom: 4px solid var(--front);
+}
+
+.RoundedImg img {
+  border-radius: 50%;
+  height: auto;
+  border: 4px solid var(--front);
+}
+
+a path {
+  fill: var(--front);
+  fill-rule: evenodd;
+}
+
+.vertical-divider {
+  border: none;
+  border-left: 1px solid #000;
+  height: 100%;
+}
+
+
+/* -------------------- POSITIONING ELEMENTS --------------------*/
+
+.row {
+  display: flex; 
+  flex-direction: row;
+}
+
+.column {
+  display: flex; 
+  flex-direction: column;
+}
+
+.RowListWrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--m4);
+  margin-bottom: var(--m4);
+}
+
+.RowList {
+  margin-bottom: var(--m3);
+  display: flex;
+  align-items: center;
+}
+
+.RowList p {
+  font-size: 1.4rem;
+  padding: 0;
+}
+
+.RowList img,
+.RowList svg {
+  padding-right: var(--m4);
+}
+
+/* ---------------------  COLLAPSIBLE  ---------------------*/
+
+
+.FaqBlocks .Collapsible__contentInner p:first-child {
+  padding-top: 20px;
+}
+.FaqBlocks .Collapsible__contentInner p:last-child {
+  padding-bottom: 0px;
+}
+.Collapsible__contentInner p:first-child {
+  margin-top: 0px;
+}
+.Collapsible__contentInner p:last-child {
+  margin-bottom: 20px;
+}
+
+.FaqBlockAccordions .Collapsible {
+  border: 1px solid;
+  border-color: var(--grey2);
+  border-radius: var(--r2);
+  background: var(--grey);
+  margin-bottom: 15px;
+}
+
+.FaqBlocks .Collapsible h3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  min-height: 40px;
+  padding: 10px 25px 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.FaqBlocks .Collapsible p {
+  font-size: 15px;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.FaqBlocks .Collapsible a {
+  color: var(--green);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+    border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.FaqBlocks .Collapsible a:hover {
+  color: var(--darkpink);
+  cursor: pointer;
+}
+
+.FaqBlocks .Collapsible__trigger.is-closed::after {
+  content: '+';
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 10px;
+  line-height: 0;
+  position: relative;
+  left: auto;
+  padding-left: 10px;
+}
+.FaqBlocks .Collapsible__trigger.is-open::after {
+  content: '-';
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  transform: scale(1.5, 1);
+  left: -4px;
+  top: 0px;
+  position: relative;
+}
+
+/* ----------------------  3D ELEMENTS --------------------*/
+
+canvas {
+  display: block;
+}
+
+/* .CanvasWrap {
+  position: relative; 
+}
+
+.CanvasWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15%; 
+  background: white; 
+  pointer-events: none; 
+  z-index: 1;
+}
+
+.CanvasWrap4 {
+  width: 600px;
+  height: 600px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.CanvasWrap4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+
+  background-image: 
+    linear-gradient(to bottom, #ffffff, transparent 0%),  
+    linear-gradient(to top, #ffffff, transparent 40%),    
+    linear-gradient(to left, #ffffff, transparent 10%),   
+    linear-gradient(to right, #ffffff, transparent 90%);   
+  
+  background-size:
+    100% 10%,  
+    100% 10%,  
+    10% 100%,  
+    10% 100%;  
+
+  background-repeat: no-repeat;
+  background-position:
+    top,       
+    bottom,    
+    right,     
+    left;  
+}    
+
+.CanvasWrap4.PurpleWrap::before {
+  background-image: 
+  linear-gradient(to bottom, #4c1c9f, transparent 90%),  
+  linear-gradient(to top, #4c1c9f, transparent 90%),    
+  linear-gradient(to left, #4c1c9f, transparent 90%),   
+  linear-gradient(to right, #4c1c9f, transparent 90%);  
+} */
+
+ /* SCALE 3D MODEL */
+
+#scaleMod {
+  display: block;
+  /* width: 580px !important;
+  height: auto !important; */
+}
+
+ /* SERVER 3D MODEL */
+
+ #serverMod {
+  display: block;
+  position: relative;
+  /* width: 960px !important;
+  height: auto !important; */
+  left: 50px;  
+  top: 60px;
+    /* border: 1px solid red; */
+
+}
+
+ /* LAYERS 3D MODEL */
+
+ #layersMod {
+  display: block;
+  /* width: 600px !important;
+  height: auto !important; */
+  /* border: 2px solid red */
+}
+
+ /* SCALABLE 3D MODEL */
+
+ .ScaleModWrap {
+  /* display: block;
+  width: 300px !important;
+  border-radius: 50px; */
+  /* border: 1px solid red; */
+ }
+
+/* WEBHOOKS 3D MODEL */
+
+#webMod {
+  display: block;
+  /* width: 300px !important;
+  height: auto !important; */
+  /* border: 2px solid red */
+}
+
+  /* SECURITY 3D MODEL */
+
+ #secMod {
+  display: block;
+  /* width: 330px !important;
+  height: auto !important; */
+  /* border: 2px solid red */
+}
+
+ /* CUBES 3D MODEL */
+
+ #cubesMod {
+  display: block;
+  /* width: 300px !important;
+  height: auto !important; */
+  /* border: 2px solid red */
+}
+
+
+
+ /* ----------------------- DISPLAY ---------------------------*/
+
+ .mobile-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--purple4); 
+  color: white;
+}
+
+.alert-box {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.502);
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+  max-width: 500px;
+  background: #a23fff69;
+}
+
+
+/* 
+.threecanvas {
+
+  background: #602499;
+  border: 5px solid rgb(55, 255, 0);
+  padding: 50px;
+
+}
+
+.threecanvas canvas {
+
+  border: 4px solid red !important;
+  z-index: 10;
+  display: block;
+  background: #fff;
+
+} */
+
+.test section {
+  padding:0;
+}
+
+.threecanvas {
+  width: 100%;
+  max-width: 1200px; 
+  height: 800px; 
+  margin: auto;
+  background: #c383ff;
+  border: 5px solid rgb(55, 255, 0);
+  padding: 50px;
+  position: relative; 
+}
+
+
+.threecanvas canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 4px solid red !important;
+  display: block;
+}
